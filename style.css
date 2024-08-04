@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+header {
+    background-color: var(--asos);
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.74px;
+    color: var(--oq);
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.82px;
+    color: var(--oq);
+}
+
+main {
+    padding: 48px 0px 131px 0;
+    background-color: var(--main);
+}
+
+input {
+    padding: 20px 160px;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--asos);
+    border: none;
+    color: var(--oq);
+    appearance: none;
+    /* width: 480px;
+    height: 56px; */
+}
+
+input::placeholder {
+    color: var(--oq);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+i {
+    margin: -460px;
+}
+
+button {
+    outline: none;
+    /* border: none; */
+    background-color: var(--asos);
+    border-radius: 5px;
+    transition: 1.4s;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 48px 0 0 0;
+}
+
+.card {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 1px;
+    max-width: 264px;
+    background-color: var(--asos);
+    text-align: center;
+
+    img {
+        margin: -10px;
+    }
+}
+
+h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 26px;
+    color: var(--oq);
+}
+
+:root {
+    --main: #202C36;
+    --asos: #2B3844;
+    --oq: #fff;
+    --qora: #000;
+}
+.dark{
+    --oq: #000;
+    --qora: #fff;
+    --main: rgb(98, 98, 98);
+    --asos: rgb(225, 221, 221);
+}
+.inp {
+    display: flex;
+    gap: 5px;
+}
+
+header input {
+    background-color: var(--oq);
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    appearance: none;
+}
+
+input::before {
+    content: "ON";
+    color: green;
+    font-weight: 900;
+}
+
+input:checked::before {
+    content: "OFF";
+    color: red;
+    font-weight: 900;
+}
+
+@media(max-width:840px){
+    .cards{
+        gap: 150px;
+    }
+    header{
+        padding: 24px 32px;
+    }
+    button{
+        font-size: 18px;
+    }
+    .search input{
+        width: 90%;
+    }
+}
